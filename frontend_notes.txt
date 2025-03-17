@@ -1,0 +1,52 @@
+BOOTSTRAP JS AND REACT NOTES
+day1 monday 17-03-2025
+
+steps to create a new git repo:
+1. login to github account
+2. on top right of the window click + and select new repository 
+3. give repository name
+4. add the description of the repository 
+5. make the repository public 
+6. check on the add readme file option
+7. click on green button create repository
+ 
+
+GIT COMMANDS:
+$ git status
+The above command is used to know the status of the repo which we are working in
+
+$ git clone https://github.com/Neha-2416/pfile_fe_mar25
+The above command copies the repo from the server(remote repo) into our computer
+
+$ git pull origin main
+This command downloads the updated repo from the server. main here is the default branch name
+
+$ git config --global user.name "Neha-2416"
+
+$ git config --global user.email "nehavenki16@gmail.com"
+
+steps to create personal access token(PAT)
+1. on top right corner click on profile icon
+2. click on settings
+3. in the new window scroll down and click on developers settings on bottom left corner
+4. in the new window on top left click on personal access tokens classic
+5. in the new window click on generate new token and select generate new token classic
+6. give a note
+7. click expiry and select no expiry
+8. select the checkbox Repo
+9. scroll down and click generate token
+10. copy the PAT and mail it yourself(use the mail subject git pat)
+
+steps to sync remote repo with local
+$ git clone https://<PAT>github.com/Neha-2416/pfile_fe_mar25
+
+steps to update the remote repo(copy then files from local to remote repo)
+$ git add .
+In the above command the git will mark (makes a list of) all the files that need to be updated in the remote repo(server)
+
+git commit -m "relevant message"
+The above command creates an object that will copy of have all the marked files (with security i.e encryption) 
+
+git push origin <branch main>
+eg. git push origin main
+The above command pushes the files to the branch main
